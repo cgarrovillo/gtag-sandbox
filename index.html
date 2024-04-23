@@ -25,8 +25,8 @@
     <button onclick="gtag('config', 'G-VC5L0K1EMG')">Attach config</button>
   </main>
 
+  <!-- Load 1 tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-87E7DJR649"></script>
-  <!-- Data Layer -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -35,28 +35,6 @@
     gtag('js', new Date());
 
     gtag('config', 'G-87E7DJR649');
-    gtag('js', new Date());
-    gtag('config', 'UA-13057225-1');
-    gtag('js', new Date());
-    gtag('config', 'AW-793802692');
-  </script>
-
-  <script>
-    function fireConversionEvent() {
-      window.gtag('event', 'conversion', {
-        send_to: 'AW-11109360058/6hH_CITlrogYEKyF65cD',
-        value: 1,
-        currency: 'CAD',
-        transaction_id: 't_123456',
-      });
-    }
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const button = document.getElementById('triggerButton');
-      if (button) {
-        button.addEventListener('click', fireConversionEvent);
-      }
-    });
   </script>
 </body>
 
