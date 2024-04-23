@@ -10,7 +10,19 @@
 <body>
   <main>
     <h1>Home page</h1>
-    <button id="triggerButton">Trigger</button>
+    <button onclick="window.gtag('event', 'conversion', {
+        send_to: 'AW-11109360058',
+        value: 1,
+        currency: 'CAD',
+        transaction_id: 't_123456',
+      })">Trigger (no label)</button>
+    <button onclick="window.gtag('event', 'conversion', {
+              send_to: 'AW-11109360058/6hH_CITlrogYEKyF65cD',
+              value: 1,
+              currency: 'CAD',
+              transaction_id: 't_123456',
+            })">Trigger (with label)</button>
+    <button onclick="gtag('config', 'G-VC5L0K1EMG')">Attach config</button>
   </main>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-87E7DJR649"></script>
@@ -23,12 +35,16 @@
     gtag('js', new Date());
 
     gtag('config', 'G-87E7DJR649');
+    gtag('js', new Date());
+    gtag('config', 'UA-13057225-1');
+    gtag('js', new Date());
+    gtag('config', 'AW-793802692');
   </script>
 
   <script>
     function fireConversionEvent() {
       window.gtag('event', 'conversion', {
-        send_to: 'AW-11109360058',
+        send_to: 'AW-11109360058/6hH_CITlrogYEKyF65cD',
         value: 1,
         currency: 'CAD',
         transaction_id: 't_123456',
